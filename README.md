@@ -19,7 +19,7 @@ You can connect your Private Space with Azure manually, or use Power Shell or Te
     - **Configure BGP**: Disabled
     
     <p align="center">
-    <img alt="Azure Network Gateway" src="images/Create_virtual_network_gateway_-_Microsoft_Azure.png" width="500"/>
+    <img alt="Azure Network Gateway" src="images/Create_virtual_network_gateway_-_Microsoft_Azure.png" width="500" border=""/>
     </p>
     
 
