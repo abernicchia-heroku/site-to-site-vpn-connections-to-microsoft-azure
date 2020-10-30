@@ -1,11 +1,11 @@
 # Site to Site VPN between Microsoft Azure and Heroku
-Unofficial procedure to create a Site-to-Site VPN between Azure and Heroku.
+This is the procedure I have used to create a Site-to-Site VPN between Azure and Heroku.
 
 Heroku [Private Space VPN connections](private-space-vpn-connection) can be used with [Azure VPN](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal), Azure's managed VPN feature. This makes it easy to establish a secure site-to-site VPN connection between your Private Space and Azure infrastructure.
 
 You can connect your Private Space with Azure manually, or use Power Shell or Terraform to automate either a portion or the whole configuration steps.
 
-![Azure Site-to-Site Heroku](https://devcenter1.assets.heroku.com/article-images/1603997105-Azure-VPN-Azure-to-Heroku-VPN-1-.png)
+![Azure Site-to-Site Heroku](images/Azure VPN - Azure to Heroku VPN v1.0.png)
 
 1. If you already have a Heroku Private Space check that your Azure Virtual Network's internal CIDR range doesn't conflict with that of your space (typically `10.0.0.0/16` or `172.17.0.0/16`). If you're creating your Heroku Private Space and Azure Virtual Network from scratch make sure their respective CIDR ranges don’t overlap (e.g. Heroku CIDR is `172.18.0.0/16`, Azure CIDR is `10.2.0.0/16`).
 2. Create an **Azure Virtual Network Gateway** using the following settings:
