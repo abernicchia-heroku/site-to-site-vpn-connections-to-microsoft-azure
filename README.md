@@ -15,8 +15,11 @@ You can connect your Private Space with Azure manually, or use Power Shell or Te
     - **Virtual Network**: select your Azure Virtual Network. Once selected a subnet (GatewaySubnet) is automatically configured for the virtual network.
     - **Enable active-active mode**: Disabled
     - **Configure BGP**: Disabled
-
-    ![Azure Network Gateway](images/Create_virtual_network_gateway_-_Microsoft_Azure.png = 100x)
+    
+    <p align="center">
+    <img alt="Azure Network Gateway" src="images/Create_virtual_network_gateway_-_Microsoft_Azure.png" width="500"/>
+    </p>
+    
 
 3. Once the the Network Gateway is created, note its public IP (e.g. `20.67.80.37`) and use it, along with the Azure CIDR, to provision the Heroku VPN connection as follows.
 
@@ -43,7 +46,9 @@ You can connect your Private Space with Azure manually, or use Power Shell or Te
     - fill the **Address space** field with the **Heroku Routable Subnets** (e.g. `172.18.0.0/16`)
     - leave unchecked the **Configure BGP settings**
 
-    ![Azure Local Network Gateway](https://devcenter2.assets.heroku.com/article-images/1603962065-Create_local_network_gateway_-_Microsoft_Azure-2.png)
+    <p align="center">
+    <img alt="Azure Local Network Gateway" src="images/Create_local_network_gateway_-_Microsoft_Azure-2.png" width="500"/>
+    </p>
 
 7. Create two **Azure Virtual Network Gateway Connections** to link each Azure Local Network Gateway with the corresponding Heroku VPN Gateway, using the following settings:
     - **Connection type**: Site-to-Site(IPSec)
@@ -53,9 +58,13 @@ You can connect your Private Space with Azure manually, or use Power Shell or Te
     - **IKE Protocol**: IKEv1
     - Leave unchecked both **Use Azure Private IP Address** and **Enable BGP**
 
-    ![Azure Virtual Network Gateway Connection](https://devcenter2.assets.heroku.com/article-images/1603968178-Basics_-_Microsoft_Azure.png)
+    <p align="center">
+    <img alt="Azure Virtual Network Gateway Connection" src="images/Basics_-_Microsoft_Azure.png" width="500"/>
+    </p>
 
-    ![Azure Virtual Network Gateway Connection Settings](https://devcenter3.assets.heroku.com/article-images/1603968251-Settings_-_Microsoft_Azure.png)
+    <p align="center">
+    <img alt="Azure Virtual Network Gateway Connection Settings" src="images/Settings_-_Microsoft_Azure.png" width="500"/>
+    </p>
 
 8. Using the Azure Portal to create Azure Virtual Network Gateway Connections doesn't support specifying a non-default IPsec/IKE policy, and the default is not compatible with the [settings](https://help.heroku.com/8V5218AS/how-can-i-establish-connection-to-my-private-space-vpn) required by the Heroku VPN. For this reason it's necessary to use PowerShell to modify the policy. This is easily done using the Azure Portal Cloud Shell:
 
