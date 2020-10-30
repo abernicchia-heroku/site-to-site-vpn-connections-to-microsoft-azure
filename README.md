@@ -1,7 +1,7 @@
-# site-to-site-vpn-connections-to-microsoft-azure
-Unofficial procedure to create a Site-to-Site VPN between Azure and Heroku
+# Site to Site VPN between Microsoft Azure and Heroku
+Unofficial procedure to create a Site-to-Site VPN between Azure and Heroku.
 
-Heroku [Private Space VPN connections](private-space-vpn-connection) are compatible with [Azure VPN](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal), Azure's managed VPN feature. This makes it easy to establish a secure site-to-site VPN connection between your Private Space and Azure infrastructure.
+Heroku [Private Space VPN connections](private-space-vpn-connection) can be used with [Azure VPN](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal), Azure's managed VPN feature. This makes it easy to establish a secure site-to-site VPN connection between your Private Space and Azure infrastructure.
 
 You can connect your Private Space with Azure manually, or use Power Shell or Terraform to automate either a portion or the whole configuration steps.
 
