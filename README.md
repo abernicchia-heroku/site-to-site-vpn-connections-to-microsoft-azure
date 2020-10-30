@@ -86,10 +86,12 @@ You can connect your Private Space with Azure manually, or use Power Shell or Te
 
     $conn2 = Get-AzVirtualNetworkGatewayConnection -Name <Connection2 name> -ResourceGroupName <Connection2 Resource Group name>
     Set-AzVirtualNetworkGatewayConnection -VirtualNetworkGatewayConnection $conn2 -IpsecPolicies $ipsecPolicy
-```
+    ```
 9. After a few minutes check that the VPN connections are ready both on Azure (the Connection status is Connected) and Heroku (the connection status is Active and the Tunnels are UP).
 
-    ![Azure Connections](https://devcenter3.assets.heroku.com/article-images/1603971248-Connections_-_Microsoft_Azure.png)
+    <p align="center">
+    <img alt="Azure Connections" src="images/Connections_-_Microsoft_Azure.png" width="500"/>
+    </p>
 
     ```term
     $ heroku spaces:vpn:connections --space space-name
