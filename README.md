@@ -16,7 +16,7 @@ You can connect your Private Space with Azure manually, or use Power Shell or Te
     - **Enable active-active mode**: Disabled
     - **Configure BGP**: Disabled
 
-    ![Azure Network Gateway](images/Create_virtual_network_gateway_-_Microsoft_Azure.png)
+    ![Azure Network Gateway](images/Create_virtual_network_gateway_-_Microsoft_Azure.png | width=100)
 
 3. Once the the Network Gateway is created, note its public IP (e.g. `20.67.80.37`) and use it, along with the Azure CIDR, to provision the Heroku VPN connection as follows.
 
