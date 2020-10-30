@@ -68,8 +68,13 @@ You can connect your Private Space with Azure manually, or use Power Shell or Te
 
 8. Using the Azure Portal to create Azure Virtual Network Gateway Connections doesn't support specifying a non-default IPsec/IKE policy, and the default is not compatible with the [settings](https://help.heroku.com/8V5218AS/how-can-i-establish-connection-to-my-private-space-vpn) required by the Heroku VPN. For this reason it's necessary to use PowerShell to modify the policy. This is easily done using the Azure Portal Cloud Shell:
 
-    ![Azure Cloud Shell button](https://devcenter1.assets.heroku.com/article-images/1603969580-Cloud-Shell-button_-_Microsoft_Azure-2.png)
-    ![Azure Cloud Shell terminal](https://devcenter3.assets.heroku.com/article-images/1603969588-Cloud-Shell-Terminal_-_Microsoft_Azure-3.png)
+    <p align="center">
+    <img alt="Azure Cloud Shell button" src="images/Cloud_Shell_button_-_Microsoft_Azure-2.png" width="500"/>
+    </p>
+
+    <p align="center">
+    <img alt="Azure Cloud Shell terminal" src="images/Cloud_Shell_Terminal_-_Microsoft_Azure-3.png" width="500"/>
+    </p>
  
     From the Cloud Shell terminal, execute the following commands, replacing the Connection and Resource Group names used to create the Azure Virtual Network Gateway Connections on the previous step.
 
